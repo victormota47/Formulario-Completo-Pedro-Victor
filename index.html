@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco"><br><br>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade"><br><br>
+
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado">
+                <option value="acre">Acre</option>
+                <option value="alagoas">Alagoas</option>
+                <option value="amapa">Amapá</option>
+                <option value="amazonas">Amazonas</option>
+                <option value="bahia">Bahia</option>
+                <option value="ceara">Ceará</option>
+                <option value="distrito-federal">Distrito Federal</option>
+                <option value="espirito-santo">Espirito Santo</option>
+                <option value="goias">Goiás</option>
+                <option value="maranhao">Maranhão</option>
+                <option value="mato-grosso">Mato Grosso</option>
+                <option value="mato-grosso-do-sul">Mato Grosso do Sul</option>
+                <option value="minas-gerais">Minas Gerais</option>
+                <option value="para">Pará</option>
+                <option value="paraiba">Paraíba</option>
+                <option value="parana">Paraná</option>
+                <option value="pernambuco">Pernambuco</option>
+                <option value="piaui">Piauí</option>
+                <option value="rio-de-janeiro">Rio de Janeiro</option>
+                <option value="rio-grande-do-norte">Rio Grande do Norte</option>
+                <option value="rio-grande-do-sul">Rio Grande do Sul</option>
+                <option value="rondonia">Rondônia</option>
+                <option value="roraima">Roraima</option>
+                <option value="santa catarina">Santa Catarina</option>
+                <option value="sao=paulo">São Paulo</option>
+                <option value="sergipe">Sergipe</option>
+                <option value="tocantins">Tocantins</option>
+            
+            </select>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            <label>Natureza do Cargo:</label><br>
+            <input type="radio" id="recepcao" name="cargo" value="recepcao" checked>
+            <label for="recepcao">Recepção</label><br>
+            <input type="radio" id="administrativo" name="cargo" value="administrativo">
+            <label for="administrativo">Administrativo</label><br>
+            <input type="radio" id="financeiro" name="cargo" value="financeiro">
+            <label for="financeiro">Financeiro</label><br>
+            <input type="radio" id="juridico" name="cargo" value="juridico">
+            <label for="juridico">Jurídico</label><br>
+            <input type="radio" id="gerencia" name="cargo" value="gerencia">
+            <label for="gerencia">Gerência</label><br><br>
+            
+
+
+            <label>Área de interesse:</label><br>
+            <input type="checkbox" id="computacao" name="interesse" value="computacao">
+            <label for="computacao">Computação</label>
+            <input type="checkbox" id="biologia" name="interesse" value="biologia">
+            <label for="biologia">Biologia</label>
+            <input type="checkbox" id="meio-ambiente" name="interesse" value="meio-ambiente">
+            <label for="meio-ambiente">Meio Ambiente</label>
+            <input type="checkbox" id="engenharia" name="interesse" value="engenharia">
+            <label for="engenharia">Engenharia</label>
+            <input type="checkbox" id="historia" name="interesse" value="historia">
+            <label for="historia">História</label><br><br>
+
+            <label for="curriculo">Mini-currículo:</label><br>
+            <textarea id="curriculo" name="curriculo" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
